@@ -76,12 +76,12 @@ console.log(user)
 let brands = [{
     name: "samsung",
     website: "samsung.com",
-    products: ["Phone", "monitor","washingMachine"]
-    
+    products: ["Phone", "monitor", "washingMachine"]
+
 }, {
     name: "apple",
     Website: "apple.com",
-    products: ["Phone", "laptop","tablet"]
+    products: ["Phone", "laptop", "tablet"]
 }
 
 ]
@@ -94,21 +94,21 @@ console.log(brands)
 let companeys = [{
     name: "motorola",
     founders: [{ name: "wrong-ceo", phone: 111 },],
-    
+
 },
-    { 
-        name: "Bannana",
-        fonders: [
-            { name: "abc", phone: 2222 },
-            {name: "xcxcv", phome: 2555},
-        ],
-    },
+{
+    name: "Bannana",
+    fonders: [
+        { name: "abc", phone: 2222 },
+        { name: "xcxcv", phome: 2555 },
+    ],
+},
 ]
 console.log(companeys)
 
 companeys[0].founders[0].name = "ram"
 console.log(companeys)
-companeys[0].founders[0].adress =   "korea"
+companeys[0].founders[0].adress = "korea"
 console.log(companeys)
 
 let person1 = {
@@ -117,4 +117,128 @@ let person1 = {
 }
 let person2 = person1
 person2.name = "shyam"
- console.log (person1)
+console.log(person1)
+
+let productApiData = {
+    prodducts: [
+        { name: "watch", price: 1000 },
+        { name: "mouse", price: 1000 },
+        { name: "cover", price: 100 },
+        { name: "mobile", rate: 10000 },
+
+    ]
+}
+productApiData.prodducts[3].price = productApiData.prodducts[3].rate
+delete productApiData.prodducts[3].rate
+console.log(productApiData)
+
+console.log("10 + 10=", 20)
+
+console.log("200+200=", 400)
+let firstInput = 100
+let secondInput = 200
+let sum = firstInput + secondInput
+
+console.log(firstInput + " + " + secondInput + " = ", sum)
+console.log(`${firstInput} + ${secondInput} = ${sum}`)
+
+
+// console.log(`${todos[0].title} is ${todos[0].status}`)
+// console.log(`${todos[1].title} is ${todos[1].status}`)
+// console.log(`${todos[2].title} is ${todos[2].status}`)
+// console.log(`${todos[3].title} is ${todos[3].status}`)
+
+// function printStatus(index) {
+//     console.log(`${todos[index].title} is ${todos[index].status}`)
+// }
+// printStatus(0)
+// printStatus(1)
+// printStatus(2)
+// printStatus(3)
+
+// function printStatus(opj) {
+//     console.log(`${opj.title} is ${opj.status}`)
+// }
+
+// printStatus(todos[0])
+// printStatus(todos[1])
+// printStatus(todos[2])
+// printStatus(todos[3])
+// printStatus(todos[4])
+
+
+
+let cart= [200, 300, 400,]
+
+// function calculateCartPrice(num1) {
+//     return (`${num1[0]} + ${num1[1]} + ${num1[3]}`);
+// }
+function calculateCartPrice(num1) {
+    return (num1[0] + num1[1] + num1[2]); 
+}
+cart[3] = 500
+console.log(calculateCartPrice(cart));
+
+const triple = (input) =>  {
+    return input * 3
+}
+console.log(triple(300))
+
+const diff = (firstInput, secondInput) => firstInput - secondInput
+
+console.log(diff(9000, 400));
+
+let peoples = ["ram", "hari", "shyam", "sita"]
+console.log(peoples[0]);
+console.log(peoples[2]);
+console.log(peoples[3]);
+console.log(peoples[4]);
+
+let willRain = false
+let hasProbabilty = false
+if (willRain) {
+    console.log("take umbrella");
+} else {
+    if (hasProbabilty) {
+        console.log("you may need it");
+    } else {
+        console.log("no need");
+    }
+    
+}
+let todos = [
+    {
+        title: "html",
+        status: false
+    },
+    {
+        title: "css",
+        status: true
+    },
+    {
+        title: "css",
+        status: true
+    }, {
+        title: "js",
+        status: false
+    }, {
+        title: "react",
+        status: false
+
+    },]
+
+
+
+    
+function checkstatus (input) {
+    if (input.status) {
+        console.log("completed");
+    } else {
+        console.log("pending");
+    }
+}
+checkstatus(todos[0])
+checkstatus(todos[1])
+checkstatus(todos[2])
+checkstatus(todos[3])
+
